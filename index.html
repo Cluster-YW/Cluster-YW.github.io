@@ -153,7 +153,7 @@
       
         <a class="archive-link" href="/archives/2023/10 ">
           October 2023 
-          <div class="archive-count">2 </div>
+          <div class="archive-count">3 </div>
         </a>
       
     </div>
@@ -166,6 +166,12 @@
     <div class="widget">
       <h3 class="widget-title">Recent Posts</h3>
       <ul>
+        
+          <a class="recent-link" href="/2023/10/23/w/" title="w" >
+            <div class="recent-link-text">
+              w
+            </div>
+          </a>
         
           <a class="recent-link" href="/2023/10/23/%E7%AC%AC%2011%20%E8%AE%B2%20.%20%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F%E4%B8%8D%E5%8F%98%E6%80%A7/" title="" >
             <div class="recent-link-text">
@@ -189,6 +195,93 @@
     </div>
     <div id="content-body">
       
+   
+
+<article id="post-w" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/10/23/w/">w</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-10-23T06:55:50.000Z" itemprop="datePublished">2023-10-23</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            517 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <hr />
+<p>title: hexo-renderer-markdown-it-plus plugin demo<br />
+date: 2017-07-27 11:54:13<br />
+tags:</p>
+<ul>
+<li>hexo</li>
+<li>Next</li>
+<li>plugin</li>
+<li>markdown-it</li>
+</ul>
+<hr />
+<p><ul class="markdownIt-TOC">
+<li><a href="#reason">reason</a></li>
+<li><a href="#hexo-renderer-markdown-it-plus">hexo-renderer-markdown-it-plus</a></li>
+</ul>
+</p>
+<h1 id="demo"><a class="markdownIt-Anchor" href="#demo"></a> demo</h1>
+<h2 id="reason"><a class="markdownIt-Anchor" href="#reason"></a> reason</h2>
+<p>I use <strong><a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">hexo-theme-next</a></strong> for my blog, and I met a problem same with <a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next/issues/826">#826</a>.</p>
+<p>I wrote a plugin <a target="_blank" rel="noopener" href="https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus"><strong>hexo-renderer-markdown-it-plus</strong></a> for fix it,and this article is a demo for <code>hexo-renderer-markdown-it-plus</code></p>
+<p>The hexo default <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a> do not support LaTex parser, you must referer external link to parse Latex grammar to html(That’s what<code>hexo-theme-next</code> did, <code>hexo-theme-next</code> use <code>mathjax</code>), and the <code>mathjax</code> and <code>hexo-renderer-marked</code> will cause some problem:</p>
+<ol>
+<li><code>_</code> parse error, you must change <code>x_i</code> to <code>x\_i</code>(This problem had been fixed when i test.)</li>
+<li>do not support lines grammar, expample below:</li>
+</ol>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line">H=-<span class="keyword">\sum</span><span class="built_in">_</span>&#123;i=1&#125;<span class="built_in">^</span>N (<span class="keyword">\sigma</span><span class="built_in">_</span>&#123;i&#125;<span class="built_in">^</span>x <span class="keyword">\sigma</span><span class="built_in">_</span>&#123;i+1&#125;<span class="built_in">^</span>x+g <span class="keyword">\sigma</span><span class="built_in">_</span>&#123;i&#125;<span class="built_in">^</span>z)</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line">f(n) = <span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"> <span class="keyword">\frac</span>&#123;n&#125;&#123;2&#125;,</span><br><span class="line"> <span class="built_in">&amp;</span> <span class="keyword">\text</span>&#123;if &#125; n<span class="keyword">\text</span>&#123; is even&#125;</span><br><span class="line"> <span class="keyword">\\</span> 3n+1, <span class="built_in">&amp;</span> <span class="keyword">\text</span>&#123;if &#125; n<span class="keyword">\text</span>&#123; is odd&#125;</span><br><span class="line"> <span class="keyword">\end</span>&#123;cases&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;aligned&#125;</span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\times</span> <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;B&#125;&#125; -<span class="keyword">\,</span> <span class="keyword">\frac</span>1c<span class="keyword">\,</span> <span class="keyword">\frac</span>&#123;<span class="keyword">\partial</span><span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;E&#125;&#125;&#125;&#123;<span class="keyword">\partial</span> t&#125; <span class="built_in">&amp;</span> = <span class="keyword">\frac</span>&#123;4<span class="keyword">\pi</span>&#125;&#123;c&#125;<span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;j&#125;&#125; <span class="keyword">\\</span>   </span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\cdot</span> <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;E&#125;&#125; <span class="built_in">&amp;</span> = 4 <span class="keyword">\pi</span> <span class="keyword">\rho</span> <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\times</span> <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;E&#125;&#125;<span class="keyword">\,</span> +<span class="keyword">\,</span> <span class="keyword">\frac</span>1c<span class="keyword">\,</span> <span class="keyword">\frac</span>&#123;<span class="keyword">\partial</span><span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;B&#125;&#125;&#125;&#123;<span class="keyword">\partial</span> t&#125; <span class="built_in">&amp;</span> = <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;0&#125;&#125; <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\cdot</span> <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;B&#125;&#125; <span class="built_in">&amp;</span> = 0 <span class="keyword">\end</span>&#123;aligned&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/10/23/w/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
    
 
 <article id="post-第 11 讲 . 一阶微分形式不变性" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
