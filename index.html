@@ -43,7 +43,119 @@
   
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body>
   
@@ -115,12 +227,14 @@
   <div class="info-card">
     <div class="avatar">
       
+        <image src=/images/avatar.png></image>
+      
       <div class="img-dim"></div>
     </div>
     <div class="info">
-      <div class="username">Your Name </div>
+      <div class="username">颜午 </div>
       <div class="dot"></div>
-      <div class="subtitle">This is the subtitle </div>
+      <div class="subtitle">北观层雪，南赏繁花。 </div>
       <div class="link-list">
         
           <a class="link-btn" target="_blank" rel="noopener" href="https://twitter.com" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
@@ -153,7 +267,7 @@
       
         <a class="archive-link" href="/archives/2023/10 ">
           October 2023 
-          <div class="archive-count">3 </div>
+          <div class="archive-count">4 </div>
         </a>
       
     </div>
@@ -167,15 +281,21 @@
       <h3 class="widget-title">Recent Posts</h3>
       <ul>
         
-          <a class="recent-link" href="/2023/10/23/w/" title="w" >
+          <a class="recent-link" href="/2023/10/23/%E7%AC%AC%2011%20%E8%AE%B2%20.%20%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F%E4%B8%8D%E5%8F%98%E6%80%A7/" title="Hello World" >
             <div class="recent-link-text">
-              w
+              Hello World
             </div>
           </a>
         
-          <a class="recent-link" href="/2023/10/23/%E7%AC%AC%2011%20%E8%AE%B2%20.%20%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F%E4%B8%8D%E5%8F%98%E6%80%A7/" title="" >
+          <a class="recent-link" href="/2023/10/23/%E5%B0%9D%E8%AF%95%E4%B8%80%E4%B8%8B/" title="尝试一下" >
             <div class="recent-link-text">
-              (no title)
+              尝试一下
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2023/10/23/w/" title="w" >
+            <div class="recent-link-text">
+              w
             </div>
           </a>
         
@@ -195,6 +315,194 @@
     </div>
     <div id="content-body">
       
+   
+
+<article id="post-第 11 讲 . 一阶微分形式不变性" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/10/23/%E7%AC%AC%2011%20%E8%AE%B2%20.%20%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F%E4%B8%8D%E5%8F%98%E6%80%A7/">Hello World</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-10-23T07:54:30.548Z" itemprop="datePublished">2023-10-23</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            619 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            一阶微分形式不变性
+展开微分 ，可知
+ 也即  因此常把
+ 记为  . 用途： 1. 化简、求复杂的微分. 2. 已知  求  .
+例4 . 设 ，求 
+. 
+参数方程确定的函数的导数
+考虑参数方程 ， . 若 ， 可导， 存在可导的反函数 ，那么  在点  可导，且
+
+，确定二阶可导函数
+，求  .
+
+隐函数求导
+给定二元方程 ，若 ，存在唯一的 ，使得 （满足函数关系），则称方程
+ 确定了区间  上的一个隐函数 .
+例 8 . 对方程 ，求  两边对
+ 求导得：  
+高阶微分
+若  二阶可导，则 ， 
+记作 （其中
+ 表示 ）
+若  ，则 
+二阶微分无形式不变性，意味着下式不一定成立 
+虽然  也常用 
+表示，但高阶导数并不等于高阶微分的商，这个式子只能作为一个整体符号看待。
+  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/10/23/%E7%AC%AC%2011%20%E8%AE%B2%20.%20%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F%E4%B8%8D%E5%8F%98%E6%80%A7/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
+   
+
+<article id="post-尝试一下" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/10/23/%E5%B0%9D%E8%AF%95%E4%B8%80%E4%B8%8B/">尝试一下</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-10-23T07:11:31.000Z" itemprop="datePublished">2023-10-23</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    Uncategorized 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            111 words 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            右边是一个行内公式！ 
+左边是数学
+下面是一个行间公式！ 
+看上面！
+
+
+这里是一个提示块
+
+
+猜猜我是什么颜色的？
+
+
+
+
+
+里面也可以放公式哦
+
+
+
+
+猜猜我是什么颜色的？
+
+
+四个空格打起来挺麻烦的 ...
+
+
+
+
+猜猜我是什么颜色的？
+
+
+四个空格打起来挺麻烦的 ...
+
+
+结束啦！
+  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/10/23/%E5%B0%9D%E8%AF%95%E4%B8%80%E4%B8%8B/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
    
 
 <article id="post-w" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -227,39 +535,33 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            517 words 
+            496 words 
           </div>
         </div>
         
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <hr />
-<p>title: hexo-renderer-markdown-it-plus plugin demo<br />
-date: 2017-07-27 11:54:13<br />
-tags:</p>
-<ul>
-<li>hexo</li>
-<li>Next</li>
-<li>plugin</li>
-<li>markdown-it</li>
-</ul>
-<hr />
-<p><ul class="markdownIt-TOC">
-<li><a href="#reason">reason</a></li>
-<li><a href="#hexo-renderer-markdown-it-plus">hexo-renderer-markdown-it-plus</a></li>
-</ul>
-</p>
-<h1 id="demo"><a class="markdownIt-Anchor" href="#demo"></a> demo</h1>
-<h2 id="reason"><a class="markdownIt-Anchor" href="#reason"></a> reason</h2>
-<p>I use <strong><a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">hexo-theme-next</a></strong> for my blog, and I met a problem same with <a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next/issues/826">#826</a>.</p>
-<p>I wrote a plugin <a target="_blank" rel="noopener" href="https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus"><strong>hexo-renderer-markdown-it-plus</strong></a> for fix it,and this article is a demo for <code>hexo-renderer-markdown-it-plus</code></p>
-<p>The hexo default <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a> do not support LaTex parser, you must referer external link to parse Latex grammar to html(That’s what<code>hexo-theme-next</code> did, <code>hexo-theme-next</code> use <code>mathjax</code>), and the <code>mathjax</code> and <code>hexo-renderer-marked</code> will cause some problem:</p>
-<ol>
-<li><code>_</code> parse error, you must change <code>x_i</code> to <code>x\_i</code>(This problem had been fixed when i test.)</li>
+          <p>@[toc]</p>
+<h1 id="demo">demo</h1>
+<h2 id="reason">reason</h2>
+<p>I use <strong><a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">hexo-theme-next</a></strong>
+for my blog, and I met a problem same with <a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next/issues/826">#826</a>.</p>
+<p>I wrote a plugin <a target="_blank" rel="noopener" href="https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus"><strong>hexo-renderer-markdown-it-plus</strong></a>
+for fix it,and this article is a demo for
+<code>hexo-renderer-markdown-it-plus</code></p>
+<p>The hexo default <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>
+do not support LaTex parser, you must referer external link to parse
+Latex grammar to html(That's what<code>hexo-theme-next</code> did,
+<code>hexo-theme-next</code> use <code>mathjax</code>), and the
+<code>mathjax</code> and <code>hexo-renderer-marked</code> will cause
+some problem:</p>
+<ol type="1">
+<li><code>_</code> parse error, you must change <code>x_i</code> to
+<code>x\_i</code>(This problem had been fixed when i test.)</li>
 <li>do not support lines grammar, expample below:</li>
 </ol>
-<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line">H=-<span class="keyword">\sum</span><span class="built_in">_</span>&#123;i=1&#125;<span class="built_in">^</span>N (<span class="keyword">\sigma</span><span class="built_in">_</span>&#123;i&#125;<span class="built_in">^</span>x <span class="keyword">\sigma</span><span class="built_in">_</span>&#123;i+1&#125;<span class="built_in">^</span>x+g <span class="keyword">\sigma</span><span class="built_in">_</span>&#123;i&#125;<span class="built_in">^</span>z)</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line">f(n) = <span class="keyword">\begin</span>&#123;cases&#125;</span><br><span class="line"> <span class="keyword">\frac</span>&#123;n&#125;&#123;2&#125;,</span><br><span class="line"> <span class="built_in">&amp;</span> <span class="keyword">\text</span>&#123;if &#125; n<span class="keyword">\text</span>&#123; is even&#125;</span><br><span class="line"> <span class="keyword">\\</span> 3n+1, <span class="built_in">&amp;</span> <span class="keyword">\text</span>&#123;if &#125; n<span class="keyword">\text</span>&#123; is odd&#125;</span><br><span class="line"> <span class="keyword">\end</span>&#123;cases&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;aligned&#125;</span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\times</span> <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;B&#125;&#125; -<span class="keyword">\,</span> <span class="keyword">\frac</span>1c<span class="keyword">\,</span> <span class="keyword">\frac</span>&#123;<span class="keyword">\partial</span><span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;E&#125;&#125;&#125;&#123;<span class="keyword">\partial</span> t&#125; <span class="built_in">&amp;</span> = <span class="keyword">\frac</span>&#123;4<span class="keyword">\pi</span>&#125;&#123;c&#125;<span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;j&#125;&#125; <span class="keyword">\\</span>   </span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\cdot</span> <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;E&#125;&#125; <span class="built_in">&amp;</span> = 4 <span class="keyword">\pi</span> <span class="keyword">\rho</span> <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\times</span> <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;E&#125;&#125;<span class="keyword">\,</span> +<span class="keyword">\,</span> <span class="keyword">\frac</span>1c<span class="keyword">\,</span> <span class="keyword">\frac</span>&#123;<span class="keyword">\partial</span><span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;B&#125;&#125;&#125;&#123;<span class="keyword">\partial</span> t&#125; <span class="built_in">&amp;</span> = <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;0&#125;&#125; <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\cdot</span> <span class="keyword">\vec</span>&#123;<span class="keyword">\mathbf</span>&#123;B&#125;&#125; <span class="built_in">&amp;</span> = 0 <span class="keyword">\end</span>&#123;aligned&#125;</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight latex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line">H=-<span class="keyword">\sum</span><span class="built_in">_</span>{i=1}<span class="built_in">^</span>N (<span class="keyword">\sigma</span><span class="built_in">_</span>{i}<span class="built_in">^</span>x <span class="keyword">\sigma</span><span class="built_in">_</span>{i+1}<span class="built_in">^</span>x+g <span class="keyword">\sigma</span><span class="built_in">_</span>{i}<span class="built_in">^</span>z)</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line">f(n) = <span class="keyword">\begin</span>{cases}</span><br><span class="line"> <span class="keyword">\frac</span>{n}{2},</span><br><span class="line"> <span class="built_in">&amp;</span> <span class="keyword">\text</span>{if } n<span class="keyword">\text</span>{ is even}</span><br><span class="line"> <span class="keyword">\\</span> 3n+1, <span class="built_in">&amp;</span> <span class="keyword">\text</span>{if } n<span class="keyword">\text</span>{ is odd}</span><br><span class="line"> <span class="keyword">\end</span>{cases}</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br><span class="line"><span class="keyword">\begin</span>{aligned}</span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\times</span> <span class="keyword">\vec</span>{<span class="keyword">\mathbf</span>{B}} -<span class="keyword">\,</span> <span class="keyword">\frac</span>1c<span class="keyword">\,</span> <span class="keyword">\frac</span>{<span class="keyword">\partial</span><span class="keyword">\vec</span>{<span class="keyword">\mathbf</span>{E}}}{<span class="keyword">\partial</span> t} <span class="built_in">&amp;</span> = <span class="keyword">\frac</span>{4<span class="keyword">\pi</span>}{c}<span class="keyword">\vec</span>{<span class="keyword">\mathbf</span>{j}} <span class="keyword">\\</span>   </span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\cdot</span> <span class="keyword">\vec</span>{<span class="keyword">\mathbf</span>{E}} <span class="built_in">&amp;</span> = 4 <span class="keyword">\pi</span> <span class="keyword">\rho</span> <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\times</span> <span class="keyword">\vec</span>{<span class="keyword">\mathbf</span>{E}}<span class="keyword">\,</span> +<span class="keyword">\,</span> <span class="keyword">\frac</span>1c<span class="keyword">\,</span> <span class="keyword">\frac</span>{<span class="keyword">\partial</span><span class="keyword">\vec</span>{<span class="keyword">\mathbf</span>{B}}}{<span class="keyword">\partial</span> t} <span class="built_in">&amp;</span> = <span class="keyword">\vec</span>{<span class="keyword">\mathbf</span>{0}} <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\nabla</span> <span class="keyword">\cdot</span> <span class="keyword">\vec</span>{<span class="keyword">\mathbf</span>{B}} <span class="built_in">&amp;</span> = 0 <span class="keyword">\end</span>{aligned}</span><br><span class="line"><span class="built_in">$</span><span class="built_in">$</span></span><br></pre></td></tr></table></figure>
         
       </div>
 
@@ -270,83 +572,6 @@ tags:</p>
     <a class="right-panel  non-pic  "
       
       href="/2023/10/23/w/" 
-    >
-       
-      <i class="fa-solid fa-angle-right non-pic"></i>
-       
-    </a>
-     
-  </div>
-  
-</article>
-
- 
-
-   
-
-<article id="post-第 11 讲 . 一阶微分形式不变性" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-   
-  <div class="article-inner">
-    <div class="article-main">
-      <header class="article-header">
-        
-<div class="main-title-bar">
-  <div class="main-title-dot"></div>
-  
-    
-      <h1 itemprop="name">
-        <a class="p-name article-title" href="/2023/10/23/%E7%AC%AC%2011%20%E8%AE%B2%20.%20%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F%E4%B8%8D%E5%8F%98%E6%80%A7/">Untitled</a>
-      </h1>
-    
-  
-</div>
-
-        <div class='meta-info-bar'>
-          <div class="meta-info">
-  <time class="dt-published" datetime="2023-10-23T06:31:59.083Z" itemprop="datePublished">2023-10-23</time>
-</div>
-          <div class="need-seperator meta-info">
-            <div class="meta-cate-flex">
-  
-    Uncategorized 
-   
-</div>
-  
-          </div>
-          <div class="wordcount need-seperator meta-info">
-            619 words 
-          </div>
-        </div>
-        
-      </header>
-      <div class="e-content article-entry" itemprop="articleBody">
-        
-          <div class="truncate-text">
-             一阶微分形式不变性
-展开微分 dy=yt′dt=f′(x)g′(t)dt=f′(x)dx=yx′dx\mathrm{d}y=y&#x27;_{t} \mathrm{d}t=f&#x27;(x)g&#x27;(t)\mathrm{d}t=f&#x27;(x)\mathrm{d}x=y&#x27;_{x}\mathrm{d}xdy=yt′​dt=f′(x)g′(t)dt=f′(x)dx=yx′​dx，可知
-dy=y∗′d∗(1)\mathrm{d}y=y&#x27;_{*}\mathrm{d}* \tag{1}
-dy=y∗′​d∗(1)
-也即
-y∗′=dyd∗(2)\displaystyle y&#x27;_{*}=\frac{ \mathrm{d}y }{ \mathrm{d}* } \tag{2}
-y∗′​=d∗dy​(2)
-因此常把 y∗′y&#x27;_{*}y∗′​ 记为 dydx\displaystyle \frac{ \mathrm{d}y }{ \mathrm{d}x }dxdy​ .
-用途：
-
-化简、求复杂的微分.
-已知 F′F&#x27;F′ 求 FFF .
-
-...  
-          </div>
-        
-      </div>
-
-         
-    </div>
-    
-     
-    <a class="right-panel  non-pic  "
-      
-      href="/2023/10/23/%E7%AC%AC%2011%20%E8%AE%B2%20.%20%E4%B8%80%E9%98%B6%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F%E4%B8%8D%E5%8F%98%E6%80%A7/" 
     >
        
       <i class="fa-solid fa-angle-right non-pic"></i>
@@ -391,7 +616,7 @@ y∗′​=d∗dy​(2)
   
           </div>
           <div class="wordcount need-seperator meta-info">
-             words 
+            78 words 
           </div>
         </div>
         
@@ -399,18 +624,23 @@ y∗′​=d∗dy​(2)
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-
+            Welcome to Hexo! This is your very
+first post. Check documentation for
+more info. If you get any problems when using Hexo, you can find the
+answer in troubleshooting or
+you can ask me on GitHub.
+Quick Start
+Create a new post
+1$ hexo new &quot;My New Post&quot;
 More info: Writing
-Run server1$ hexo server
-
+Run server
+1$ hexo server
 More info: Server
-Generate static files1$ hexo generate
-
+Generate static files
+1$ hexo generate
 More info: Generating
-Deploy to remote sites1$ hexo deploy
-
+Deploy to remote sites
+1$ hexo deploy
 More info: Deployment
   
           </div>
@@ -444,7 +674,7 @@ More info: Deployment
   
   <div id="footer-info" class="inner">
     
-    &copy; 2023 Your Name<br>
+    &copy; 2023 颜午<br>
     Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
   </div>
 </footer>
