@@ -169,9 +169,9 @@
       <h3 class="widget-title">Recent Posts</h3>
       <ul>
         
-          <a class="recent-link" href="/2023/12/11/%E7%8C%8E%E9%AC%BC%E6%94%BE%E5%AD%A6%E5%90%8E/" title="猎鬼放学后" >
+          <a class="recent-link" href="/2023/12/20/%E6%8C%87%E9%92%88%E5%92%8C%E6%95%B0%E7%BB%84%E8%BE%A8%E6%9E%90/" title="指针和数组辨析" >
             <div class="recent-link-text">
-              猎鬼放学后
+              指针和数组辨析
             </div>
           </a>
         
@@ -187,7 +187,7 @@
       
    
 
-<article id="post-猎鬼放学后" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-指针和数组辨析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
    
   <div class="article-inner">
     <div class="article-main">
@@ -198,7 +198,7 @@
   
     
       <h1 itemprop="name">
-        <a class="p-name article-title" href="/2023/12/11/%E7%8C%8E%E9%AC%BC%E6%94%BE%E5%AD%A6%E5%90%8E/">猎鬼放学后</a>
+        <a class="p-name article-title" href="/2023/12/20/%E6%8C%87%E9%92%88%E5%92%8C%E6%95%B0%E7%BB%84%E8%BE%A8%E6%9E%90/">指针和数组辨析</a>
       </h1>
     
   
@@ -206,7 +206,7 @@
 
         <div class='meta-info-bar'>
           <div class="meta-info">
-  <time class="dt-published" datetime="2023-12-11T05:18:53.000Z" itemprop="datePublished">2023-12-11</time>
+  <time class="dt-published" datetime="2023-12-20T04:11:11.000Z" itemprop="datePublished">2023-12-20</time>
 </div>
           <div class="need-seperator meta-info">
             <div class="meta-cate-flex">
@@ -217,7 +217,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            149 words 
+            1.7k words 
           </div>
         </div>
         
@@ -225,29 +225,26 @@
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
-            世界观设定
-主要人物
-伍研
-你可以叫她阿研。
-外观设定：
-黑发，黑瞳，单侧马尾。大概率穿着校服。一名普通的中国女高中生（嗯）。
-
-和安娜同居。
-喜欢吃泡面。
-不喜欢吃除了鱼以外的海鲜。
-
-安娜
-外观设定
-金发，麻花辫。在学校穿校服。平时绝对不会穿，喜欢打扮自己。
-
-和伍研同居。
-不知道哪里来的魔女。
-喜欢研究物理，常年物理成绩碾压阿研（让她很难过）。
-喜欢在家里炼药/炼金。
-
-莫诺
-蠢蠢
-  
+            1. 指针 ≠ 数组
+虽然数组可以退化为指针，但是指针和数组完全是两种数据类型，请勿把两者混为一谈！
++ 数组：
+固定长度的存储相同数据类型的数据结构，占用一段连续的内存空间。
++ 指针：
+一种存储地址的变量，不同类型的指针变量所占用的存储单元长度是相同的。p==&amp;a可以等效看作
+*p==a 。
+指针/数组都有指向/元素的类型，这个类型也可以是指针或者数组。指针可以指向数组，数组也可以存储指针，这并不矛盾。
+2. 数组名可以看作指针
+首先，数组名可以看作指针，并不表示数组就是指针。不过一般来说，数组名使用时可以看作指向首元素的指针。也即
+a 可以看作是 &amp;a[0]。
+什么时候不能看作指针呢，比如说使用 sizeof 的时候。对于数组
+int a[10]，sizeof(a) 返回的是
+40，但是对于指针
+int *p，sizeof(p) 返回的则是
+8（64位系统）。
+3. 指针的运算
+指针可以和整数进行运算，表示在地址中移动相应数量的类型的空间。比如一个
+int 型的变量占用 4 字节，那么对于一个指针
+int *p 来说，p...  
           </div>
         
       </div>
@@ -258,7 +255,7 @@
      
     <a class="right-panel  non-pic  "
       
-      href="/2023/12/11/%E7%8C%8E%E9%AC%BC%E6%94%BE%E5%AD%A6%E5%90%8E/" 
+      href="/2023/12/20/%E6%8C%87%E9%92%88%E5%92%8C%E6%95%B0%E7%BB%84%E8%BE%A8%E6%9E%90/" 
     >
        
       <i class="fa-solid fa-angle-right non-pic"></i>
