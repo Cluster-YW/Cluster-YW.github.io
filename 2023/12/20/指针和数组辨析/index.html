@@ -245,7 +245,7 @@
 <p>指针/数组都有<strong>指向/元素的类型</strong>，这个类型也可以是指针或者数组。指针可以指向数组，数组也可以存储指针，这并不矛盾。</p>
 <h3 id="数组名可以看作指针"><strong>2. 数组名可以看作指针</strong></h3>
 <p>首先，数组名可以看作指针，并不表示数组就是指针。不过一般来说，<strong>数组名使用时可以看作指向首元素的指针</strong>。也即
-<code>a</code> 可以看作是 <code>&amp;a[0]</code>。<br>
+<code>a</code> 可以看作是 <code>&amp;a[0]</code>。<br />
 什么时候不能看作指针呢，比如说使用 <code>sizeof</code> 的时候。对于数组
 <code>int a[10]</code>，<code>sizeof(a)</code> 返回的是
 <code>40</code>，但是对于指针
@@ -256,13 +256,13 @@
 <code>int</code> 型的变量占用 4 字节，那么对于一个指针
 <code>int *p</code> 来说，<code>p+1</code>
 就是在原先存储的地址上向后移动 4 个字节，也就是 1 个 int . 同理
-<code>p+3</code> 就是向后移动 12 个字节，也就是 3 个 int 。<br>
+<code>p+3</code> 就是向后移动 12 个字节，也就是 3 个 int 。<br />
 </p>
 <h3 id="通过指针来得到数组元素"><strong>4.
 通过指针来得到数组元素</strong></h3>
 <p>我们已经知道（请务必确保理解下面三个内容是怎么推出结论的）：</p>
-<p><em>1.</em> 数组元素占用一段<strong>连续</strong>的内存空间。<br>
-<em>2.</em> 数组名可以看成指向首地址的<strong>指针</strong>。<br>
+<p><em>1.</em> 数组元素占用一段<strong>连续</strong>的内存空间。<br />
+<em>2.</em> 数组名可以看成指向首地址的<strong>指针</strong>。<br />
 <em>3.</em> 指针可以通过整数的加减法移动。</p>
 <p>那么我们就可以<strong>通过 <code>*(a+i)</code> 来访问
 <code>a[i]</code></strong>，相当于先取首地址的指针，然后向后平移，最后再解引用，就可以得到对应的数组元素
@@ -271,7 +271,7 @@
 存储数组的数组</strong></h3>
 <p><strong>数组存储的元素类型也可以是数组</strong>，也就是了二维数组。例如
 <code>int a[10][10]</code> 实际上是一个包含了 10 个 <code>int[10]</code>
-这样的数组的数组。<br>
+这样的数组的数组。<br />
 那么根据 <em>2.</em>
 ，数组名可以看成首元素的指针，也就是说这时，<strong>二维数组的数组名
 <code>a</code> 可以看成 <code>&amp;a[0]</code></strong> （请注意不是
@@ -280,17 +280,17 @@
 <h3 id="用指针访问二维数组元素"><strong>6.
 用指针访问二维数组元素</strong></h3>
 <p><em>1.</em>
-中我们可以知道，数组连续存储。那么二位数组又是连续储存的一维数组，所以<strong>二维数组在内存中可以看成每个元素平铺成一维数组</strong>。<br>
+中我们可以知道，数组连续存储。那么二位数组又是连续储存的一维数组，所以<strong>二维数组在内存中可以看成每个元素平铺成一维数组</strong>。<br />
 那也就是说，以 <code>int a[5][10]</code> 为例，每行是
 <code>int[10]</code> 有 10 个元素。一个 <code>int</code>
-类型的指针，只需要往后 10 个刚刚好就跳到了下一行。<br>
+类型的指针，只需要往后 10 个刚刚好就跳到了下一行。<br />
 于是我们首先定义 <code>int *a=&amp;a[0][0]</code> 或者
 <code>int *a=a[0]</code>，就可以通过 <code>*(a + i*10 + j)</code> 来访问
 <code>a[i][j]</code>！（请注意这里只<code>*</code>解引用了一次，因为是<code>int</code>类型的指针）</p>
 <h3 id="数组指针-指向数组的指针"><strong>7. 数组指针 =
 指向数组的指针</strong></h3>
 <p>逻辑很简单，首先这是个指针，然后它指向一个（固定长度的）数组。<code>int (*p)[3]</code>，<code>(*p)</code>
-就是说明他首先是个指针，指向一个 <code>int[3]</code> 数组。<br>
+就是说明他首先是个指针，指向一个 <code>int[3]</code> 数组。<br />
 根据之前 <em>3.</em> 的说明，显然这时 <code>p+1</code> 就是移动一个
 <code>int[3]</code> 的空间，相当于移动一行，也就是 <code>12</code>
 个字节。</p>
@@ -298,13 +298,13 @@
 用数组指针访问二维数组元素</strong></h3>
 <p>数组指针指向的类型是数组，那么根据 <em>3.</em> ，对于数组指针
 <code>int (*p)[3]</code>来说 <code>p+1</code> 就是移动一个
-<code>int[3]</code>，也是移动一行。<br>
+<code>int[3]</code>，也是移动一行。<br />
 由 <em>5.</em> 可知，<code>int a[5][3]</code> 相当于就是 5 个
 <code>int[3]</code>，而 <strong><code>a</code> 就是指向第一个
 <code>int[3]</code> 的指针</strong>。那么就可以定义数组指针
 <code>int (*p)[3]=a</code> ，指向第一行，<strong>于是
 <code>*(p+3)</code> 就是第三行，相当于 <code>p[3]</code>，也就是
-<code>a[3]</code>。</strong><br>
+<code>a[3]</code>。</strong><br />
 之后，<strong><code>a[3]</code> 又可以看成指向本行第一个元素
 <code>int</code>
 的指针</strong>。只需要再次使用一维数组的方法，就可以访问到数组内的元素。
@@ -315,9 +315,9 @@
 <p>首先有数组 <code>int a[5][3]</code>，</p>
 <table>
 <colgroup>
-<col style="width: 18%">
-<col style="width: 45%">
-<col style="width: 35%">
+<col style="width: 18%" />
+<col style="width: 45%" />
+<col style="width: 35%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -371,12 +371,12 @@
 </table>
 <h3 id="指针数组-存储指针的-数组">9. 指针数组 = 存储指针的 数组</h3>
 <p><code>int *a[5]</code>，首先判定 <code>a[5]</code>，是数组，元素是
-<code>int *</code> 。<br>
+<code>int *</code> 。<br />
 数组名 <code>a</code>
 就可以看成是一个指向指针（<code>int*</code>）的指针，也即二级指针。不多阐述。</p>
 <h3 id="二级指针-指向指针的-指针">10. 二级指针 = 指向指针的 指针</h3>
 <p><code>int **p</code>，首先判定 <code>*p</code> 是个指针，指向的类型是
-<code>int *</code>。<br>
+<code>int *</code>。<br />
 不多阐述。</p>
 <h3 id="指针函数-返回指针类型的-函数">11. 指针函数 = 返回指针类型的
 函数</h3>
@@ -386,14 +386,15 @@
 <p><code>int (*p)()</code>，首先判定 <code>*p</code> 是个指针，指向
 <code>int()</code> 是一个函数。</p>
 <h3 id="总结">总结</h3>
-<p>第一，指针和数组都是两类需要指定<strong>内部类型</strong>的变量类型，对于指针是<strong>指向的变量类型</strong>，对于数组来说是<strong>包含元素的类型</strong>。<br>
-第二，指针的运算中，实际上移了多少字节，由其指向的类型决定。<br>
+<p>第一，指针和数组都是两类需要指定<strong>内部类型</strong>的变量类型，对于指针是<strong>指向的变量类型</strong>，对于数组来说是<strong>包含元素的类型</strong>。<br />
+第二，指针的运算中，实际上移了多少字节，由其指向的类型决定。<br />
 第三，内部类型仍然可以嵌套地定义为指针和数组，这并不影响相关的性质。</p>
 <p>实际判定时，从变量名出发即可，要注意定义指针的 <code>*</code>
 的优先级比定义数组的 <code>[]</code> 和定义函数的 <code>()</code>
 要低。</p>
-<p>如果你有兴趣继续研究，参考知乎问题：<br>
-<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/628409525"><strong>如何理解<code>int (*(*(*p)(int *))[4]) (int*)</code>？</strong></a>
+<p>如果你有兴趣继续研究，参考知乎问题：<br />
+<a
+target="_blank" rel="noopener" href="https://www.zhihu.com/question/628409525"><strong>如何理解<code>int (*(*(*p)(int *))[4]) (int*)</code>？</strong></a>
 。</p>
 <p>先写到这里。</p>
 <p>By 颜午</p>
